@@ -6,7 +6,5 @@
   <strong>Text:</strong>
   <%= @article.text %>
 </p>
-
-<%= link_to "<< BACK", articles_path %>
-<%= link_to "New z samej ścieżki", new_article_path %>
-<%= link_to "Link do Welcome", controller: 'welcome' %>
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
